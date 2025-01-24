@@ -3041,7 +3041,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_TargetDisplay: 0
 --- !u!224 &390783807
 RectTransform:
@@ -5095,7 +5095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 1343829245}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &670748728
@@ -14503,9 +14503,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1715339280}
+  - component: {fileID: 1715339282}
   - component: {fileID: 1715339279}
   - component: {fileID: 1715339281}
-  - component: {fileID: 1715339282}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged

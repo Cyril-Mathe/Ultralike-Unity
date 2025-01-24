@@ -6,7 +6,8 @@ public class GameStarter : MonoBehaviour
 
     void Start()
     {
-        foreach(var script in scriptsToDisable)
+        Time.timeScale = 0f; // Pause le jeu au démarrage
+        foreach (var script in scriptsToDisable)
         {
             script.enabled = false;
         }
@@ -14,7 +15,8 @@ public class GameStarter : MonoBehaviour
 
     public void EnableGameScripts()
     {
-        foreach(var script in scriptsToDisable)
+        Time.timeScale = 1f; // Reprend le jeu
+        foreach (var script in scriptsToDisable)
         {
             script.enabled = true;
         }

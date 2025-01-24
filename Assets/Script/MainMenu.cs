@@ -19,6 +19,8 @@ public class MainMenu : MonoBehaviour
     
     void Start()
     {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         // Activation du menu principal
         mainMenuUI.SetActive(true);
         optionsMenuUI.SetActive(false);
@@ -38,6 +40,8 @@ public class MainMenu : MonoBehaviour
     
     void StartGame()
     {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
         mainMenuUI.SetActive(false);
         GetComponent<GameStarter>().EnableGameScripts();
     }
