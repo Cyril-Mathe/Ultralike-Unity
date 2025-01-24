@@ -1,7 +1,5 @@
 using UnityEngine;
 
-
-// Script de comportement des ennemis
 public class EnemyBehavior : MonoBehaviour
 {
     private Transform player;
@@ -16,11 +14,8 @@ public class EnemyBehavior : MonoBehaviour
     {
         if (player != null)
         {
-            // Déplacement vers le joueur
-            transform.position = Vector3.MoveTowards(transform.position, 
-                player.position, moveSpeed * Time.deltaTime);
-            
-            // Rotation vers le joueur
+            Vector3 targetPosition = Vector3.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
+            transform.position = targetPosition;
             transform.LookAt(player);
         }
     }

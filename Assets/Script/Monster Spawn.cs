@@ -26,11 +26,17 @@ public class EnemySpawner : MonoBehaviour
     {
         float randomAngle = Random.Range(0f, 360f);
         float randomDistance = Random.Range(minSpawnDistance, maxSpawnDistance);
-        
+    
         Vector3 direction = Quaternion.Euler(0, randomAngle, 0) * Vector3.forward;
         Vector3 spawnPosition = player.position + direction * randomDistance;
-        spawnPosition.y = player.position.y;
-        
+    
+        // Raycast depuis le haut
+        RaycastHit hit;
+        if (Physics.Raycast(spawnPosition + Vector3.up * 50f, Vector3.down, out hit))
+        {
+            return hit.point + Vector3.up;  // Ajoute 1 unité en hauteur
+        }
+    
         return spawnPosition;
     }
 
