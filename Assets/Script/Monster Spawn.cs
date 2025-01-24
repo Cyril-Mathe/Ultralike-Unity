@@ -4,8 +4,8 @@ using System.Collections;
 public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] private GameObject enemyPrefab;
-    [SerializeField] private float minSpawnDistance = 10f; // Distance minimum du joueur
-    [SerializeField] private float maxSpawnDistance = 20f; // Distance maximum du joueur
+    [SerializeField] private float minSpawnDistance = 20f; // Distance minimum du joueur
+    [SerializeField] private float maxSpawnDistance = 30f; // Distance maximum du joueur
     [SerializeField] private float spawnInterval = 2f;
     [SerializeField] private int initialEnemyCount = 3;
     [SerializeField] private int enemyIncreaseAmount = 2;
