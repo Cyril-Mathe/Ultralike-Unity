@@ -31,6 +31,13 @@ public class FPSMovement : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         playerRigidbody.freezeRotation = true;
+    
+        // Force la position au sol
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position + Vector3.up * 50f, Vector3.down, out hit))
+        {
+            transform.position = hit.point;
+        }
     }
     
     void Update()
