@@ -2890,7 +2890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f21b27eccbc274d42a41c04a4cc13368, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 347857006148227297, guid: f08bb4cb7e17fc2439cf0ac6974a81ac,
+  enemyPrefab: {fileID: 7421533273671959607, guid: 3e187bb8fcafe98489fbd5b456f43c78,
     type: 3}
   minSpawnDistance: 10
   maxSpawnDistance: 20
@@ -10927,6 +10927,12 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 474771239037117528, guid: 62bad4c942dfdef4e95204b7606a0249,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 4431639105004650145, guid: 10d4b618ec77f554c94492972e29907d,
+        type: 3}
     - target: {fileID: 474771239037117528, guid: 62bad4c942dfdef4e95204b7606a0249,
         type: 3}
       propertyPath: dashCooldown
